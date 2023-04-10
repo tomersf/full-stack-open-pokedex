@@ -12,6 +12,6 @@ RUN apk update && \
 # node_modules is not copied due to dockerignore file
 COPY . . 
 
-EXPOSE 5000
+EXPOSE 5005
 
 CMD ["npm", "start"]

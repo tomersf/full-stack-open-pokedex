@@ -6,6 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     video: false,
+    screenshotOnRunFailure: false,
     env: {
       SERVER_PORT: process.env.PORT || 5005,
     },

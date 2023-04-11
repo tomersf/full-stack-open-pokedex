@@ -30,3 +30,6 @@ jobs:
           command: npm run test:e2e
           start: npm run start-prod
           wait-on: http://localhost:5005
+      - name: deploy
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: echo "Deployed!"
